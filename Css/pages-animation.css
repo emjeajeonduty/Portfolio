@@ -1,0 +1,63 @@
+/* colorset:
+        #CECECE - lightgrey
+        #FCF5ED - cream
+        #FC6736 - orange
+        #0C2D57 - navy
+*/
+nav .container a:hover{
+    color: #FC6736;
+
+    transition: all 0.2s;
+}
+
+main .container .p_card .pc_description a:hover{
+    font-weight: bold;
+
+    transition: all 0.5s;
+}
+main .container .p_card .pc_description a:visited{
+    color: #0C2D57;
+}
+main .container .p_card .pc_view:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+main .container .p_card .pc_view:hover p{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+main .container .popUp_img.active{
+    animation: popUp 0.3s linear;
+}
+main .container .popUp_img span:hover{
+    color: #FC6736;
+}
+
+/* -------------------- */
+/* KEYFRAMES */
+/* -------------------- */
+@keyframes appearOdd{
+    from{
+        opacity: 0;
+        scale: 0;
+        /* transform: translateX(-6000px); */
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+    }
+}
+@keyframes appearEven{
+    from{
+        opacity: 0;
+        scale: 0;
+        /* transform: translateX(6000px); */
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+    }
+}

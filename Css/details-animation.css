@@ -1,0 +1,42 @@
+/* colorset:
+        #CECECE - lightgrey
+        #FCF5ED - cream
+        #FC6736 - orange
+        #0C2D57 - navy
+*/
+nav .container a:hover{
+    color: #FC6736;
+    
+    transition: all 0.2s;
+}
+main #gallery img:hover{
+    transform: scale(1.1);
+}
+main #gallery video:hover{
+    transform: scale(1.1);
+}
+main #description .popUp_img.active{
+    animation: popUp 0.3s linear;
+}
+main #description .popUp_img span:hover{
+    color: #FC6736;
+}
+main #description .desc_link a:hover{
+    color: #FC6736;
+    font-weight: bold;
+
+    transition: all 0.3s;
+}
+
+
+/* -------------------- */
+/* KEYFRAMES */
+/* -------------------- */
+@keyframes popUp {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

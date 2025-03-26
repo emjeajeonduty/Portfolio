@@ -1,0 +1,88 @@
+
+/* colorset:
+        #CECECE - lightgrey
+        #FCF5ED - cream
+        #FC6736 - orange
+        #0C2D57 - navy
+*/
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {    
+    *{
+        display: none;
+    }
+    nav .container {
+        padding: 20px 50px;
+    }
+    nav .container ul {
+        position: absolute;
+        top: 42px;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 0px;
+        width: 100px;
+        padding: 0px 10px;
+        overflow: hidden;
+
+        background-color: #CECECE;
+        border-radius: 0px 0px 10px 10px;
+
+        transition: all 1s;
+    }
+    nav .container ul.toggle {
+        height: 150px;
+        transition: all 1s;
+    }
+    nav .container ul li a:hover{
+        color: #FCF5ED;
+        
+        transition: all 0.3s;
+    }
+    nav .container .nav-burger {
+        display: flex;
+        z-index: 1;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    nav .container ul {
+        display: flex;
+    }
+
+    /* #contact .container{
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: 'kr1 kn1';
+    justify-content: center;
+    padding: 0px 50px;
+    }
+    #contact .container .cKiri{
+        position: relative;
+        left: -1000px;
+        grid-area: 'kr1';
+
+        transition: all 1s;
+    }
+    #contact .container .cKanan{
+        position: relative;
+        left: 1000px;
+        grid-area: 'kn1';
+
+        transition: all 1s;
+    } */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-color: #FCF5ED;
+    }
+    #home .container{
+        display: flex;
+        align-items: center;
+        padding: 0px;
+    }
+}

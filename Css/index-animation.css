@@ -1,0 +1,120 @@
+/* colorset:
+        #CECECE - lightgrey
+        #FCF5ED - cream
+        #FC6736 - orange
+        #0C2D57 - navy
+*/
+
+nav .container ul li a:visited{
+    color:#0C2D57;
+}
+nav .container ul li a:hover{
+    color: #CECECE;
+    
+    transition: all 0.3s;
+}
+nav .container ul li a.active{
+    color: #FC6736;
+    font-weight: bold;
+}
+
+#home .hImage .borderImage img.active{
+    width: 200px;
+    height: 300px;
+
+    transform: rotate(0deg);
+    transition: all 1s;
+}
+
+#about .container .aKiri h1.active{
+    right: 0px;
+
+    transition: all 1s;
+}
+#about .container .aKanan h1.active{
+    left: 0px;
+
+    transition: all 1s;
+}
+#about .container .aKanan h2.active{
+    left: 0px;
+
+    transition: all 1.3s;
+}
+#about .container .aKanan p.active{
+    left: 0px;
+
+    transition: all 1.6s;
+}
+#about .container .aKanan .btnContact.active{
+    left: 0px;
+
+    transition: all 1.9s;
+}
+#about .container .aKanan .btnContact .btn_email:hover{
+    padding: 10px;
+
+    background-color: #c90000;
+    border-radius: 25%;
+    color: white;
+}
+#about .container .aKanan .btnContact .btn_github:hover{
+    padding: 10px;
+
+    background-color: #0C2D57;
+    border-radius: 25%;
+    color: white;
+}
+#about .container .aKanan .btnContact .btn_linkedin:hover{
+    padding: 10px;
+
+    background-color: #4169e1;
+    border-radius: 25%;
+    color: white;
+}
+#about .container .aKanan .btnContact .btn_ig:hover{
+    padding: 10px;
+
+    background-color: #da00b5;
+    border-radius: 25%;
+    color: white;
+}
+#about .container .aKanan .btnContact .btn_wa:hover{
+    padding: 10px;
+
+    background-color: #007c00;
+    border-radius: 25%;
+    color: white;
+}
+#about .container .aKanan .btnContact .btn_certificate:hover{
+    padding: 10px;
+
+    background-color: #FC6736;
+    border-radius: 25%;
+    color: white;
+}
+#project .container .pm_card:hover{
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border: 5px dashed #0C2D57;
+    color: #FC6736;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+#project .container .title.active{
+    /* font-size: 3em; */
+    opacity: 1;
+}
+#project .container .pmenu a:nth-child(odd).active{
+    top: 0px;
+}
+#project .container .pmenu a:nth-child(even).active{
+    top: 0px;
+}
+
+/* -------------------- */
+/* KEYFRAMES */
+/* -------------------- */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

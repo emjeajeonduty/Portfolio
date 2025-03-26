@@ -1,0 +1,498 @@
+/* colorset:
+        #CECECE - lightgrey
+        #FCF5ED - cream
+        #FC6736 - orange
+        #0C2D57 - navy
+*/
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    color: #0C2D57;
+    background-color: #FCF5ED;
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+nav{
+    display: grid;
+    justify-items: center;
+}
+nav .container{
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2,1fr);
+    height: 50px;
+    width: 100%;
+    /* margin-top: 25px; */
+    padding: 20px 50px;
+    z-index: 99999;
+    box-sizing: border-box;
+    
+    /* border-top: 2px dashed #0C2D57; */
+    border-bottom: 2px dashed #0C2D57;
+    background-color: #FCF5ED;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+nav .container h1{
+    letter-spacing: 2px;
+}
+nav .container ul{
+    display: none;
+    justify-content: end;
+    gap: 25px;
+}
+nav .container ul li a{
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+nav .container .nav-burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    height: 15px;
+    width: 100%;
+}
+nav .container .nav-burger input {
+    position: absolute;
+    top: 5px;
+    right: 43px;
+    height: 25px;
+    width: 25px;
+    z-index: 1;
+
+    opacity: 0%;
+}
+nav .container .nav-burger span {
+    width: 20px;
+    height: 2px;
+
+    background-color: #0C2D57;
+    border-radius: 19px;
+
+    transition: all 1s;
+}
+
+
+#home, #about, #project,#test{
+    height: 100vh;
+    width: 100vw;
+}
+/* ---------- */
+/* HOME */
+/* ---------- */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#home .container{
+    justify-items: center;
+}
+
+#home h1{
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+
+#home .hImage{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+    width: 400px;
+    height: 400px;
+    margin: 0px 10px;
+    box-sizing: border-box;
+    
+}
+
+#home .hImage .loadImage {
+    position: relative;
+    top: 38px;
+
+    width: 325px;
+    height: 325px;
+
+    border: 7px solid transparent;
+    border-top: 7px solid #FC6736;
+    border-bottom: 7px solid #CECECE;
+    border-radius: 50%;
+    box-sizing: border-box;
+    
+    animation: spin 5s linear infinite;
+    transition: all 1s;
+}
+
+#home .hImage .borderImage {
+    position: relative;
+    top: -275px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+
+    border-radius: 50%;
+}
+
+#home .hImage .borderImage img {
+    position: relative;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+
+    transform: rotate(-180deg);
+    transition: all 1s;
+}
+
+/* ---------- */
+/* ABOUT */
+/* ---------- */
+#about{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#about .container{
+    display: grid;
+    grid-template-columns: 20% auto;
+    width: 100%;
+    padding: 0px 50px;
+}
+
+#about .container .aKiri{
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    overflow-x: hidden;
+
+    /* border: 1px solid black; */
+}
+
+#about .container .aKiri h1{
+    position: relative;
+    right: -500px;
+    padding: 50px 50px 50px 0px;
+    
+    font-size: 5em;
+    writing-mode: vertical-rl;
+    border-right: 5px solid #CECECE;
+
+    transition: all 1s;
+}
+
+#about .container .aKanan{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    padding: 0px 50px;
+    overflow: hidden;
+    letter-spacing: 2px;
+}
+
+#about .container .aKanan h1,
+#about .container .aKanan h2{
+    margin-bottom: 20px;
+}
+
+#about .container .aKanan h1{
+    position: relative;
+    left: -2000px;
+    
+    color: #FC6736;
+    font-weight: bold;
+    font-size: 2em;
+
+    transition: all 1s;
+}
+
+#about .container .aKanan h2{
+    position: relative;
+    left: -1000px;
+
+    color: #0C2D57;
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 10px;
+
+    transition: all 1s;
+}
+
+#about .container .aKanan p{
+    position: relative;
+    left: -2000px;
+
+    color: #0C2D57;
+    font-size: 1em;
+    line-height: 25px;
+    text-align: justify;
+
+    transition: all 1s;
+}
+
+#about .container .aKanan .btnContact{
+    position: relative;
+    left: -1000px;
+    margin-top: 35px;
+
+    transition: all 1s;
+}
+
+#about .container .aKanan .btnContact a{
+    margin-right: 10px;
+
+    color: #0C2D57;
+    font-size: 1.5em;
+
+    transition: all 0.3s;
+}
+
+/* ---------- */
+/* PROJECT */
+/* ---------- */
+#project{
+    display: flex;
+    justify-content: center;
+}
+#project .container{
+    display: grid;
+    grid-gap: 25px;
+    align-content: center;
+    width: 100%;
+    padding: 0px 70px 0px 50px;
+}
+#project .container .title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+
+    opacity: 0;
+    transition: all 3s;
+}
+#project .container .pmenu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,205px));
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 5px 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#project .container .pm_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    color: #0C2D57;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border: 5px solid #FC6736;
+    border-radius: 15px;
+}
+#project .container .pmenu a:nth-child(odd){
+    position: relative;
+    top: -500px;
+
+    transition: all 1s;
+}
+#project .container .pmenu a:nth-child(even){
+    position: relative;
+    top: 500px;
+
+    transition: all 1s;
+}
+#project .container .p_UIUX{
+    pointer-events: none;
+    opacity: 0.1;
+}
+#project .container .pmenu .pm_card img{
+    width: 200px;
+    height: 175px;
+    margin-top: 25px;
+    z-index: -1;
+
+    /* border: 1px solid blue; */
+}
+#project .container .pmenu .pm_card p{
+    font-size: 2em;
+    letter-spacing: 3px;
+    z-index: -1;
+}
+
+/* ---------- */
+/* CONTACT */
+/* ---------- */
+/* #contact{
+    display: grid;
+    align-content: center;
+}
+
+#contact .container{
+    display: grid;
+    grid-gap: 20px;
+    
+    font-family: 'montserrat';
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+#contact .container .cKiri{
+    align-content: center;
+    height: 100%;
+}
+#contact .container .cKiri h1{
+    color: #FC6736;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#contact .container .cKiri p{
+    text-align: justify;
+    color: #0C2D57;
+    font-size: 1em;
+    line-height: 25px;
+}
+#contact .container .cKanan{
+    align-content: center;
+    height: 100%;
+    width: fit-content;
+    margin-right: 20px;
+}
+#contact .container .cKanan form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    padding: 25px 0px;
+    
+    background-color: rgba(206, 206, 206, 0.5);
+    border-radius: 15px;
+}
+
+#contact .container .cKanan form .cForm{
+    display: grid;
+    padding: 0px 50px;
+    margin-bottom: 10px;
+}
+
+#contact .container .cKanan form .cForm input{
+    height: 25px;
+    padding: 5px 10px;
+    z-index: 1;
+    
+    color: #0C2D57;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #0C2D57;
+    letter-spacing: 1px;
+}
+
+#contact .container .cKanan form .cForm p{
+    position: relative;
+    left: 10px;
+    top: -24px;
+
+    z-index: 0;
+
+    font-size: 0.7em;
+    letter-spacing: 1px;
+
+    transition: all 0.5s;
+}
+
+#contact .container .cKanan form .cForm select{
+    height: 40px;
+    padding: 5px 5px;
+    z-index: 1;
+    
+    color: #0C2D57;
+    font-size: 0.8em;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #0C2D57;
+    letter-spacing: 1px;
+
+    transition: all 0.5s;
+}
+
+#contact .container .cKanan form .cForm:nth-child(3) p{
+    position: relative;
+    left: 10px;
+    top: -24px;
+    z-index: 0;
+
+    font-size: 0.7em;
+    letter-spacing: 1px;
+
+    transition: all 0.5s;
+}
+
+#contact .container .cKanan form .cForm textarea{
+    margin-top: 20px;
+    padding: 5px 10px;
+    z-index: 1;
+    
+    color: #0C2D57;
+    background-color: transparent;
+    border: 1px dashed #0C2D57;
+    resize: none;
+    letter-spacing: 1px;
+    border-radius: 5px;
+
+    transition: all 0.1s;
+}
+#contact .container .cKanan form .cForm:nth-child(4) p{
+    position: relative;
+    text-align: center;
+    left: 0px;
+    top: -100px;
+
+    z-index: 0;
+
+    font-size: 0.7em;
+    letter-spacing: 1px;
+
+    transition: all 0.5s;
+}
+#contact .container .cKanan form .cForm:nth-child(5){
+    display: flex;
+    justify-content: right;
+}
+#contact .container .cKanan form .cForm input[type='button']{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 15px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+
+    font-size: 0.7em;
+    border: 1px solid #0C2D57;
+    border-radius: 5px;
+
+    transition: all 0.5s;
+} */
