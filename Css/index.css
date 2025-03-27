@@ -83,6 +83,10 @@ nav .container .nav-burger span {
     transition: all 1s;
 }
 
+#blockpage{
+    display: none;
+}
+
 
 #home, #about, #project,#test{
     height: 100vh;
