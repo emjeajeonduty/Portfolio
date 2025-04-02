@@ -62,7 +62,7 @@ main .container{
     justify-self: center;
     grid-gap: 15px;
     
-    /* border: 1px solid red; */
+    /* border: 1px solgiid red; */
 }
 main .container .p_card {
     display: grid;
