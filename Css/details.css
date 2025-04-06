@@ -47,6 +47,10 @@ nav .container a{
 main{
     padding: 50px 50px;
 }
+main .container {
+    display: grid;
+    justify-content: center;
+}
 main #gallery{
     display: grid;
     grid-auto-flow: column;
