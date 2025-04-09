@@ -19,7 +19,7 @@ body{
     font-size: 15px;
 }
 nav{
-    /* display: grid; */
+    display: grid;
 }
 nav .container{
     position: fixed;
